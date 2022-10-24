@@ -6,7 +6,7 @@
 
 <div>
   <% if session[:from_page]%>
-  <%= link_to "Back to scores", '/students/'+@score.student_id.to_s + '/edit_score' %>
+  <%= link_to "Back to scores", '/students/'+ @from_student_id.to_s + '/edit_score' %>
   <% else %>
   <%= link_to "Back to scores", scores_path %>
   <%end%>
